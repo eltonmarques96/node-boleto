@@ -2,9 +2,10 @@ const moment = require('moment')
 var formatters = require('../../lib/formatters')
 var ediHelper = require('../../lib/edi-helper')
 var helper = require('./helper')
- 
+
 exports.options = {
-  logoURL: 'https://www.elo.com.br/themes/custom/elo/img/promocao-caixa-vem-vidao/logo-caixa.png',
+  // logoURL: 'https://www.elo.com.br/themes/custom/elo/img/promocao-caixa-vem-vidao/logo-caixa.png',
+  logoURL: 'https://computerworld.com.br/wp-content/uploads/sites/2/2019/05/itaulogo_952.jpg',
   logoEmpresa: 'https://storage.googleapis.com/wzukusers/user-34515129/images/5c85235e29e8f1HELlH9/logo-hage---final_d400.png',
   codigo: '104'
 }
@@ -49,7 +50,7 @@ exports.linhaDigitavel = function (barcodeData) {
   // 37-43    -> Conta do Cedente (sem dígito)
   // 44-44    -> Zero (Fixo)
 
-  
+
 
   var campos = []
 
